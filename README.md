@@ -1,5 +1,5 @@
 # GCN-for-BBBP-Prediction
-## Graph Convolutional Networks (GCN) for Predicting Brain Barrier Blood Permeability of Compounds
+## Graph Convolutional Networks (GCN) for Predicting Blood-Brain Barrier Permeability of Compounds
 
 Some of my work was inspired by the following work:
 https://www.kaggle.com/code/priyanagda/simple-gcn
@@ -23,7 +23,7 @@ Sample from the dataset:
 ![image](https://user-images.githubusercontent.com/83327791/220550198-3446de98-d236-41c4-af8d-5b5814357f52.png)
 
 The dataset's target values (permeability) are distributed as following:
-![image](https://user-images.githubusercontent.com/83327791/220548696-15ba89e1-a668-4e73-8482-366b65055897.png)
+![image](https://user-images.githubusercontent.com/83327791/220572512-5fbcc8b6-cdf9-4b44-909a-568d71851d61.png)
 
 Reference:
 https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html
@@ -60,7 +60,7 @@ Reference: https://pytorch-geometric.readthedocs.io/en/latest/get_started/introd
 ![image](https://user-images.githubusercontent.com/83327791/220549483-c2a0a62e-77a5-471b-be75-a6828c0a8e82.png)
 
 ## Result
-![image](https://user-images.githubusercontent.com/83327791/220549537-68022621-3c0d-466b-9854-bfcf82a81042.png)
+![image](https://user-images.githubusercontent.com/83327791/220572432-9e389e7d-216a-47eb-81fd-a6407e39aa47.png)
 
 ## Testing the Trained Model
 ![image](https://user-images.githubusercontent.com/83327791/220549694-20509256-0df4-4584-ae21-3ec1f554c5d8.png)
