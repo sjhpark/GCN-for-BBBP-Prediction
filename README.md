@@ -34,6 +34,24 @@ https://deepchem.readthedocs.io/en/latest/api_reference/moleculenet.html
   - 10% for validation
   - 10% for testing
 
+## edge_index
+I used edge_index as the feature to pass into the GCN model to train.
+
+Here, edge_indx has the shape of [2, num_edges]
+
+Each compound can be seen as an unweighted and undirected graph as the example shown below:
+![image](https://user-images.githubusercontent.com/83327791/220552838-4ae9c8c0-c651-40a0-a626-1b4509c98490.png)
+
+Therefore, the first row in the edge_index represents the edge between nodes in a single direction.
+The second row represents the edge between nodes in the opposite direction.
+
+Example:
+![image](https://user-images.githubusercontent.com/83327791/220553136-e681e982-759f-4a9a-b6d4-65aa909dfe2e.png)
+- 1st row: [0, 1, 1, 2] == [node0 -> node1, node1 -> node 2]
+- 2nd row: [1, 0, 2, 1] == [node1 --> node0, node2 --> node1]
+
+Reference: https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html
+
 ## GCN Model Architecture
 ![image](https://user-images.githubusercontent.com/83327791/220549483-c2a0a62e-77a5-471b-be75-a6828c0a8e82.png)
 
