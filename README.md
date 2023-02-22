@@ -19,6 +19,7 @@ _"The blood-brain barrier penetration (BBBP) dataset is designed for the modelin
 The dataset contains the names and SMILE strings of 2050 different compounds.
 
 Sample from the dataset:
+
 ![image](https://user-images.githubusercontent.com/83327791/220550198-3446de98-d236-41c4-af8d-5b5814357f52.png)
 
 The dataset's target values (permeability) are distributed as following:
@@ -64,6 +65,3 @@ Reference: https://pytorch-geometric.readthedocs.io/en/latest/get_started/introd
 ## Testing the Trained Model
 ![image](https://user-images.githubusercontent.com/83327791/220549694-20509256-0df4-4584-ae21-3ec1f554c5d8.png)
 ![image](https://user-images.githubusercontent.com/83327791/220549741-d5b0dcb9-302c-4233-ae09-75d2f395059b.png)
-
-
-
