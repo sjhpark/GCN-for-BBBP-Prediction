@@ -17,6 +17,8 @@ _"The blood-brain barrier penetration (BBBP) dataset is designed for the modelin
 - 4th column: SMILES (simplified molecular-input line-entry system)
 
 The dataset contains the names and SMILE strings of 2050 different compounds.
+
+Sample from the dataset:
 ![image](https://user-images.githubusercontent.com/83327791/220550198-3446de98-d236-41c4-af8d-5b5814357f52.png)
 
 The dataset's target values (permeability) are distributed as following:
