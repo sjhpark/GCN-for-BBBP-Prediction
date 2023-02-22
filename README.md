@@ -46,6 +46,7 @@ Therefore, the first row in the edge_index represents the edge between nodes in 
 The second row represents the edge between nodes in the opposite direction.
 
 Example:
+
 ![image](https://user-images.githubusercontent.com/83327791/220553136-e681e982-759f-4a9a-b6d4-65aa909dfe2e.png)
 - 1st row: [0, 1, 1, 2] == [node0 -> node1, node1 -> node 2]
 - 2nd row: [1, 0, 2, 1] == [node1 --> node0, node2 --> node1]
