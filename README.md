@@ -1,5 +1,5 @@
 # GCN-for-BBBP-Prediction
-## Graph Convolutional Networks (GCN) for Predicting Brain Barrier Blood Permeability of Compounds
+## Graph Convolutional Networks (GCN) for Predicting Blood-Brain Barrier Permeability of Compounds
 
 Some of my work was inspired by the following work:
 https://www.kaggle.com/code/priyanagda/simple-gcn
