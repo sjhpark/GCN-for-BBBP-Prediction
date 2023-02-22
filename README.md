@@ -65,3 +65,19 @@ Reference: https://pytorch-geometric.readthedocs.io/en/latest/get_started/introd
 ## Testing the Trained Model
 ![image](https://user-images.githubusercontent.com/83327791/220549694-20509256-0df4-4584-ae21-3ec1f554c5d8.png)
 ![image](https://user-images.githubusercontent.com/83327791/220549741-d5b0dcb9-302c-4233-ae09-75d2f395059b.png)
+
+## Discussion
+__Why is the validation loss lower than the training loss for the first few epochs of training?__
+
+In the beginning, I did not understand why the validation loss was lower than the training loss for the first few epochs of training. I initially had thought that the training loss should be lower than the validation loss. However, I did not find any data leakage issue to my validation dataset. Thus, I decided to further research the cause of this phenomenon.
+
+Below are possible reasons for having a lower validation loss than the training loss.
+1. __Dropout is not applied during validation while it is applied during training.__ I used the dropout technique after my convolution layer. Remember, dropout is a regularization technique that randomly drops out some of the neurons in the network. Thus, the network is less likely to overfit during training. However, during validation, the network is not trained. Thus, the network is more likely to overfit during validation. Therefore, the validation loss is higher than the training loss.
+2. __Regularization is not applied during validation while it is applied during training.__ I used weight decay (L2 regularization) after each of my convolution layer. Remember, regularization is a technique that penalizes the loss function. Thus, the network is less likely to overfit during training. However, during validation, the network is not trained. Thus, the network is more likely to overfit during validation. Therefore, the validation loss is higher than the training loss.
+
+### References:
+
+[1] https://pyimagesearch.com/2019/10/14/why-is-my-validation-loss-lower-than-my-training-loss/
+
+[2] https://towardsdatascience.com/what-your-validation-loss-is-lower-than-your-training-loss-this-is-why-5e92e0b1747e#:~:text=The%20regularization%20terms%20are%20only,loss%20than%20the%20training%20set.
+
